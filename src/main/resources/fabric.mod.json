@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mavitys_madness",
+	"version": "${version}",
+	"name": "Mavity's Madness",
+	"description": ":shrug:",
+	"authors": [
+		"Mavity The Madity, KaupenJoe's tutorial course for fabric 1.20.1."
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "ARR",
+	"icon": "assets/mavitys_madness/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mavity.mavitys_madness.MavitysMadness"
+		],
+		"fabric-datagen": [
+			"net.mavity.mavitys_madness.MavitysMadnessDataGenerator"
+		]
+	},
+	"mixins": [
+		"mavitys_madness.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
