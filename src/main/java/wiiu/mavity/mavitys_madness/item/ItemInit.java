@@ -2,9 +2,8 @@ package wiiu.mavity.mavitys_madness.item;
 
 import wiiu.mavity.mavitys_madness.MavitysMadness;
 
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
+import net.minecraft.item.*;
+import net.minecraft.registry.*;
 import net.minecraft.util.Identifier;
 
 public class ItemInit {
