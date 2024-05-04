@@ -24,6 +24,7 @@ public class MavitysMadness implements ModInitializer {
 
 		// Logger and Initializing Classes
 		MavitysMadness.LOGGER.info(MavitysMadness.NAME + " has registered its' main class.");
+		MavitysMadnessClient.registerMavitysMadnessClient();
 		BlockInit.registerMavitysMadnessBlocks();
 		ItemInit.registerMavitysMadnessItems();
 
