@@ -27,5 +27,8 @@
   "block.mavitys_madness.exampleblock": "Example Block Lang Translation",
 
   "section3_2": "Block Tooltips",
-  "tooltip.mavitys_madness.block.exampleblock": "Example Block Tooltip Lang Translation"
+  "tooltip.mavitys_madness.block.exampleblock": "Example Block Tooltip Lang Translation",
+
+  "section4": "Villager Types",
+  "entity.minecraft.villager.nuclear_engineer": "Nuclear Engineer"
 }

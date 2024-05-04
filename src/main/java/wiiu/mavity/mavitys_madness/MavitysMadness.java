@@ -7,6 +7,7 @@ import net.fabricmc.api.ModInitializer;
 import wiiu.mavity.mavitys_madness.block.BlockInit;
 import wiiu.mavity.mavitys_madness.config.MavitysMadnessConfig;
 import wiiu.mavity.mavitys_madness.item.ItemInit;
+import wiiu.mavity.mavitys_madness.villager.VillagerInit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,6 +28,7 @@ public class MavitysMadness implements ModInitializer {
 		MavitysMadnessClient.registerMavitysMadnessClient();
 		BlockInit.registerMavitysMadnessBlocks();
 		ItemInit.registerMavitysMadnessItems();
+		VillagerInit.registerMavitysMadnessVillagers();
 
 		// Config
 		MidnightConfig.init(MavitysMadness.MOD_ID, MavitysMadnessConfig.class);

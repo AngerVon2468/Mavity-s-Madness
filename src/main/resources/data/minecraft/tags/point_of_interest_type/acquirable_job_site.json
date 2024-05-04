@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    {
+      "id": "mavitys_madness:nuclear_engineer_poi",
+      "required": false
+    }
+  ]
+}
