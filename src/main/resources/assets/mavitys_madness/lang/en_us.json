@@ -1,0 +1,31 @@
+{
+  "section1": "Config Stuff",
+
+  "section1_1": "Titles",
+  "mavitys_madness.midnightconfig.category.settings": "Mavity's Madness Settings",
+  "mavitys_madness.midnightconfig.category.appearance": "Mavity's Madness Appearance",
+
+  "section1_2": "Comments",
+  "mavitys_madness.midnightconfig.comment_1": "Mavity's Madness Configurations",
+  "mavitys_madness.midnightconfig.comment_2": "Mavity's Madness Configurations",
+
+  "section1_3": "Booleans",
+  "mavitys_madness.midnightconfig.showTooltips": "Show Item Tooltips",
+  "mavitys_madness.midnightconfig.lol_boolean": "Lol boolean",
+
+  "section2": "Items",
+
+  "section2_1": "Item Names",
+  "item.mavitys_madness.exampleitem": "Example Item Lang Translation",
+
+  "section2_2": "Item Tooltips",
+  "tooltip.mavitys_madness.item.exampleitem": "Example Item Tooltip Lang Translation",
+
+  "section3": "Blocks",
+
+  "section3_1": "Block Names",
+  "block.mavitys_madness.exampleblock": "Example Block Lang Translation",
+
+  "section3_2": "Block Tooltips",
+  "tooltip.mavitys_madness.block.exampleblock": "Example Block Tooltip Lang Translation"
+}

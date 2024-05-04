@@ -8,18 +8,18 @@
 		"Mavity The Madity, KaupenJoe's tutorial course for fabric 1.20.1."
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://github.com/AngerVon2468/Mavity-s-Madness",
+		"sources": "https://github.com/AngerVon2468/Mavity-s-Madness"
 	},
 	"license": "ARR",
 	"icon": "assets/mavitys_madness/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.mavity.mavitys_madness.MavitysMadness"
+			"wiiu.mavity.mavitys_madness.MavitysMadness"
 		],
 		"fabric-datagen": [
-			"net.mavity.mavitys_madness.MavitysMadnessDataGenerator"
+			"wiiu.mavity.mavitys_madness.MavitysMadnessDataGenerator"
 		]
 	},
 	"mixins": [

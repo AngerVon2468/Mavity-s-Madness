@@ -1,6 +1,12 @@
-package net.mavity.mavitys_madness;
+package wiiu.mavity.mavitys_madness;
+
+import eu.midnightdust.lib.config.MidnightConfig;
 
 import net.fabricmc.api.ModInitializer;
+
+import wiiu.mavity.mavitys_madness.block.BlockInit;
+import wiiu.mavity.mavitys_madness.config.MavitysMadnessConfig;
+import wiiu.mavity.mavitys_madness.item.ItemInit;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +22,13 @@ public class MavitysMadness implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		// Logger and Initializing Classes
 		MavitysMadness.LOGGER.info(MavitysMadness.NAME + " has registered its' main class.");
+		BlockInit.registerMavitysMadnessBlocks();
+		ItemInit.registerMavitysMadnessItems();
+
+		// Config
+		MidnightConfig.init(MavitysMadness.MOD_ID, MavitysMadnessConfig.class);
 
 	}
 }
