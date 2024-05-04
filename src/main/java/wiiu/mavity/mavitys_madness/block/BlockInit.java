@@ -1,6 +1,7 @@
 package wiiu.mavity.mavitys_madness.block;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 
 import wiiu.mavity.mavitys_madness.MavitysMadness;
 
@@ -23,6 +24,7 @@ public class BlockInit {
     }
 
     // Register Blocks Here
+    public static final Block URANIUM = registerBlock("uranium", new Block(FabricBlockSettings.create()));
 
     public static void registerMavitysMadnessBlocks() {
         MavitysMadness.LOGGER.info(MavitysMadness.NAME + " has registered its' blocks.");
