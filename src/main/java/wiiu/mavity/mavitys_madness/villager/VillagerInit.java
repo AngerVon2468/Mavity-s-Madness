@@ -2,9 +2,12 @@ package wiiu.mavity.mavitys_madness.villager;
 
 import com.google.common.collect.ImmutableSet;
 
+import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.object.builder.v1.world.poi.PointOfInterestHelper;
 
 import net.minecraft.block.*;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
 import net.minecraft.registry.*;
 import net.minecraft.sound.*;
 import net.minecraft.util.Identifier;
@@ -37,5 +40,16 @@ public class VillagerInit {
 
     public static void registerMavitysMadnessVillagers() {
         MavitysMadness.LOGGER.info(MavitysMadness.NAME + " has registered its' villagers.");
+    }
+
+    public static void registerCustomTrades() {
+        TradeOfferHelper.registerVillagerOffers(VillagerInit.NUCLEAR_ENGINEER, 1,
+                factories -> {
+                    factories.add((entity, random) -> new TradeOffer(
+                            new ItemStack(Items.EMERALD, 7), // This adds the input
+                            new ItemStack(Items.STICK, 5), // This adds the input
+                            new ItemStack(Items.APPLE, 2)/* This adds the output*/, 6, 2, 0.02f
+                    ));
+                });
     }
 }

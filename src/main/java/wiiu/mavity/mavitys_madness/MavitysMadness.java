@@ -33,8 +33,13 @@ public class MavitysMadness implements ModInitializer {
 		ItemInit.registerMavitysMadnessItems();
 		VillagerInit.registerMavitysMadnessVillagers();
 
+		VillagerInit.registerCustomTrades();
+
 		// Fuck you OptiFine :D
 		if (FabricLoader.getInstance().isModLoaded("optifabric")) {
+			MinecraftClient.getInstance().close();
+		}
+		if (FabricLoader.getInstance().isModLoaded("optifine")) {
 			MinecraftClient.getInstance().close();
 		}
 
